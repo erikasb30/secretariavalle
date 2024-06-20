@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Reuniones Virtuales</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="room-interface">
+            <!-- Video local (de la propia cámara) -->
+            <div class="video-container">
+                <video id="localVideo" autoplay muted></video>
+                <!-- Indicador visual de grabación -->
+                <div id="recordingIndicator" class="recording-indicator"></div>
+                <!-- Cronómetro de grabación -->
+                <div id="recordingTimer" class="recording-timer"></div>
+                <!-- Botón para solicitar permisos -->
+                <div class="controls">
+                    <button id="requestPermissionsBtn">Permisos Cam y Mic</button>
+                </div>
+            </div>
+            <!-- Controles de cámara y micrófono -->
+            <div class="controls">
+                <button id="toggleCameraBtn">Activar/Desactivar Cámara</button>
+                <button id="toggleMicBtn">Activar/Desactivar Micrófono</button>
+            </div>
+            <!-- Contenedor de chat (aún por implementar) -->
+            <div class="chat-container">
+                <!-- Aquí puedes agregar el código para el chat -->
+            </div>
+        </div>
+        <!-- Controles generales -->
+        <div class="controls">
+            <button id="shareLinkBtn">Compartir Link</button>
+            <button id="startRecordingBtn">Iniciar Grabación</button>
+            <button id="stopRecordingBtn">Detener Grabación</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
